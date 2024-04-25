@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Portfolio</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f0f8ff;
+color: #333;
+line-height: 1.6;
+}
+  
+#profile-photo{
+position: absolute;
+right: 10px;
+width: 150px;
+height: 130px;
+border-radius: 50%;
+overflow:hidden;
+background-color:#ccc;
+}
+header{
+background-color: #4169e1; 
+color: #fff;
+padding: 1rem;
+}
+header h1{
+margin: 0;
+}
+nav{
+background-color: #20b2aa;
+color: #fff;
+padding: 1rem;
+}
+
+nav ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+nav li{
+display: inline;
+margin-right: 1rem;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+}
+main{
+padding: 2rem;
+}
+section{
+margin-bottom: 2rem;
+padding: 2rem;
+}
+#about{
+background-color: #f0fff0;
+}
+#services{
+background-color: #fafad2;
+}
+#portfolio{
+background-color: #ffe4e1;
+}
+#contact{
+background-color: #f0ffff;
+}
+section h2{
+margin-top: 0;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+li {
+margin-bottom: 1rem;
+}
+footer {
+background-color: #20b2aa;
+color: #fff; 
+padding: 1rem;
+text-align: center;
+}
+#portfolio-list {
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+#portfolio-list li {
+flex-basis: calc(33.333% - 2rem);
+margin: 1rem;
+}
+#portfolio-list a{
+display: block;
+text-decoration: none;
+}
+#portfolio-list img{
+width: 100%;
+height: auto;
+}
+#contact-form {
+display: flex;
+flex-direction: column;
+}
+#contact-form label {
+margin-bottom: 0.5rem;
+}
+#contact-form input,
+#contact-form textarea {
+margin-bottom: 1rem;
+padding: 0.5rem;
+}
+#contact-form button {
+padding: 0.5rem;
+background-color: #4169e1;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+#contact-form button:hover{
+background-color: #1e90ff;
+}
+</style>
+<body>
+<header>
+<img id="profile-photo" src="photo.jpg" alt="Your Photo">
+<h1>Welcome to My Portfolio</h1>
+</header>
+<nav>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Project</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<main>
+<section id="about">
+<h2>About Me</h2>
+<p>
+Hello! I'm T.SUBHASH, a passionate Computer Science and Engineering student with a strong foundation in programming, software development, 
+and innovative problem-solving. Currently pursuing my Second year" at VIT, I am passionate about exploring the vast world of computer science and pushing the boundaries of what technology can achieve.
+My academic journey has been a blend of rigorous coursework, hands-on projects, and continuous learning, shaping me into a well-rounded engineer.
+
+</p>
+</section>
+<section id="services">
+<h1>Services</h1>
+<ul>
+<li>
+<h2>Web Development</h2>
+<p>
+Full-stack Web Development:
+Building web applications using frameworks like React, Angular, on the frontend and Node.js, Django, or Flask on the backend.
+</p>
+<P>
+Web Hosting and Deployment: Setting up web hosting environments and deploying web applications
+</P>
+</li>
+<li>
+<h2>Internet Of Things(IOT)</h2>
+<p>
+Smart Home Systems: Designing and implementing home automation systems using IoT devices like smart lights, thermostats, and security cameras.
+</p>
+<p>
+IoT Security: Implementing security measures to protect IoT devices and networks from cyber threats.
+</p>
+<p>
+IoT Integration: Integrating IoT solutions with existing systems or platforms to enhance functionality and automation.
+<p>
+</li>
+<li>
+<h2>Software Development</h2>
+<p>
+Desktop Applications: Building applications using languages like Java, C#, or Python.
+</p>
+<p>
+Mobile App Development: Creating Android or iOS apps using technologies like Kotlin, Swift, or React Native.
+</p>
+Database Management: Designing and implementing databases using SQL or NoSQL databases like MySQL, MongoDB.
+</p>
+</li>
+</ul>
+</section>
+<section id="portfolio">
+<h2>Project</h2>
+<ul id="portfolio-list">
+<li>
+<a href="#">
+<img src="shopping.jpg" alt="Project 1" width="300" height="200">
+<h3>Shopping Website</h3>
+</a>
+</li>
+<li>
+<a href="#">
+<img src="caluclator.jpeg" alt="Project 2" width="300" height="300">
+<h3>scientific calculator</h3>
+</a>
+</li>
+<li>
+<a href="#">
+<img src="TIC.jpeg" alt="Project 3" width="300" height="300">
+<h3>TIC TAC TOE</h3>
+</a>
+</li>
+</ul>
+</section>
+<section id="contact">
+<h2>Contact Me</h2>
+<form id="contact-form">
+<label for="name">Name:</label>
+ <input type="text" id="name" name="name">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+<button type="submit">Send Message</button>
+</section>
+</main>
+<footer>
+<p>&copy; 2024 T.SUBHASH. All rights reserved.</p>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const form = document.querySelector('#contact-form');
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+const name = document.querySelector('#name').value;
+const email = document.querySelector('#email').value;
+const message = document.querySelector('#message).value;
+</script>
+</body>
+</html>

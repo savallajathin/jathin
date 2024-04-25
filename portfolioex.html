@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('space-background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #0d47a1;
+    color: #18ffff;
+    padding: 1rem;
+    background-opacity: 0.8;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #18ffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    background-color: rgba(8, 24, 43, 0.8);
+}
+
+#about, #services, #portfolio, #contact,#resume-photo {
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    background-color: rgba(13, 71, 161, 0.8);
+    color: #18ffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a:hover,
+footer a:hover {
+    color: #ffea00;
+}
+
+button {
+    background-color: #2962ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #ffea00;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+#profile-photo {
+    width: 350px; 
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#portfolio-list li {
+    margin-bottom: 2rem;
+}
+
+#portfolio-list li p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #b0bec5;
+}
+
+#portfolio-list li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#portfolio-list li a:hover {
+    text-decoration: underline;
+}
+.service-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex; 
+    align-items: center;
+}
+
+.service-image {
+    width: 300px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.service-description {
+    border-left: 4px solid #18ffff; 
+    padding-left: 1rem;
+    margin-top: 1rem;
+    flex-grow: 1;
+}
+
+.service-item h2 {
+    color: #18ffff;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+.project-item {
+    display: flex;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-container {
+    flex: 0 0 400px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-info h3 {
+    color: powderblue;
+    margin-bottom: 1rem;
+}
+
+.project-info p {
+    color: #e0e0e0;
+}
+
+
+
+#resume-photo {
+    text-align: center; 
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 2rem; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resume-image {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem; 
+}
+
+
+#contact {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+#contact-form {
+    flex: 1; 
+    margin-right: 2rem;
+}
+
+.width-33 {
+    flex: 0 0 33%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.width-33 h3, .width-33 h4, .width-33 p {
+    margin: 0.5rem 0; 
+    color: #e0e0e0;
+}
+.education-container p{
+	line-height: var(--line-height);
+padding: 0.4rem;}
+	
+
+
+
+
+</style>
+<body>
+<header>
+<img id="profile-photo" src="myphoto.jpg" width=400,height=400 alt="Your Photo">
+<h1 style="color:orange">TEELLA SUBHASH</h1>
+</header>
+<nav>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Project</a></li>
+<li><a href="#resume-photo">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<main>
+<section id="about">
+<h2>About Me</h2>
+<p>
+Hello! I'm T.SUBHASH, a passionate Computer Science and Engineering student with a strong foundation in programming, software development, 
+and innovative problem-solving. Currently pursuing my Second year" at VIT, I am passionate about exploring the vast world of computer science and pushing the boundaries of what technology can achieve.
+My academic journey has been a blend of rigorous coursework, hands-on projects, and continuous learning, shaping me into a well-rounded engineer.
+<br><br>
+
+<h2>Educational Details</h2>
+<div class="education-container">
+<p><strong>sri chaitanya vidyanaikethan</strong><p>
+<p>Secondary High Schooling</p>
+<p>2020 - 2022</p>
+</div>
+<div class="education-container"><br><br>
+<p><strong>sri chaitanya techno school</strong></p>
+<p>Secondary Schooling</p>
+<p>2018- 2020</p>
+</div>
+
+</p>
+</section>
+<section id="services">
+    <h1>Services</h1>
+    <ul>
+        <li class="service-item">
+            <img src="webdev.jpeg" alt="Web Development" class="service-image">
+            <h2>Web Development</h2>
+            <div class="service-description">
+                <p>Full-stack Web Development: Building web applications using frameworks like React, Angular, on the frontend and Node.js, Django, or Flask on the backend.</p>
+                <p>Web Hosting and Deployment: Setting up web hosting environments and deploying web applications.</p>
+            </div>
+        </li>
+        <li class="service-item">
+            <img src="iot.jpeg" alt="Internet Of Things(IOT)" class="service-image">
+            <h2>Internet Of Things(IOT)</h2>
+            <div class="service-description">
+                <p>Smart Home Systems: Designing and implementing home automation systems using IoT devices like smart lights, thermostats, and security cameras.</p>
+                <p>IoT Security: Implementing security measures to protect IoT devices and networks from cyber threats.</p>
+                <p>IoT Integration: Integrating IoT solutions with existing systems or platforms to enhance functionality and automation.</p>
+            </div>
+        </li>
+        <li class="service-item">
+            <img src="sod.jpeg" alt="Software Development" class="service-image">
+            <h2>Software Development</h2>
+            <div class="service-description">
+                <p>Desktop Applications: Building applications using languages like Java, C#, or Python.</p>
+                <p>Mobile App Development: Creating Android or iOS apps using technologies like Kotlin, Swift, or React Native.</p>
+                <p>Database Management: Designing and implementing databases using SQL or NoSQL databases like MySQL, MongoDB.</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section id="portfolio">
+    <h2>Project</h2>
+    <ul id="portfolio-list">
+        <li class="project-item">
+            <div class="project-image-container">
+                <img src="shopping.jpg" alt="Project 1" class="project-image">
+            </div>
+            <div class="project-info">
+                <h3 style="color:powderblue;">Shopping Website</h3>
+                <p>A full-fledged shopping website developed using React and Node.js. Features include user registration and authentication, product catalog, shopping cart functionality, and secure payment gateway integration.</p>
+            </div>
+        </li>
+        <li class="project-item">
+            <div class="project-image-container">
+                <img src="caluclator.jpeg" alt="Project 2" class="project-image">
+            </div>
+            <div class="project-info">
+                <h3 style="color:powderblue;">Scientific Calculator</h3>
+                <p>A scientific calculator built using JavaScript, HTML, and CSS. It supports basic arithmetic operations, scientific functions like trigonometry, logarithms, and more. The calculator provides a user-friendly interface with responsive design.</p>
+            </div>
+        </li>
+        <li class="project-item">
+            <div class="project-image-container">
+                <img src="TIC.jpeg" alt="Project 3" class="project-image">
+            </div>
+            <div class="project-info">
+                <h3 style="color:powderblue;">TIC TAC TOE</h3>
+                <p>A classic TIC TAC TOE game developed using HTML, CSS, and JavaScript. It offers both single-player and multiplayer modes. The game features a responsive design and intuitive user interface.</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+ <section id="resume-photo">
+    <h2>Resume</h2>
+    <img src="resumesubbu.jpg" alt="Resume" id="resume-image">
+ </section>
+<br>
+
+<section id="contact">
+    <form id="contact-form">
+	<h2>Contact</h2><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="width-33">
+        <h3>
+            <i class="fa fa-phone"></i>
+        </h3>
+        <h4 style="color:black">Phone</h4>
+        <p style="color:black">+91 7569835036</p>
+    </div>
+    <div class="width-33">
+        <h3>
+            <i class="fa fa-envelope-o"></i>
+        </h3>
+        <h4 style="color:black">Email</h4>
+        <p style="color:black">subhashteella@gmail.com</p>
+    </div>
+</section>
+
+</main>
+<footer>
+<p>&copy; 2024 T.SUBHASH. All rights reserved.</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const form = document.querySelector('#contact-form');
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+const name = document.querySelector('#name').value;
+const email = document.querySelector('#email').value;
+const message = document.querySelector('#message').value;
+</script>
+</body>
+</html>
